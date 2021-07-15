@@ -1,6 +1,7 @@
 ---
 title: Freelance Web Development
-dates: "11/2016 - 12/2017"
+startdate: "11/2016"
+enddate: "12/2017"
 description: "Built web tools with mentorship from senior developers."
 ---
 

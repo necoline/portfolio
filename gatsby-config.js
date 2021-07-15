@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/story`,
+        name: `story`,
       },
     },
     {
@@ -112,8 +112,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Necoline's Portfolio`,
+        short_name: `portfolio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

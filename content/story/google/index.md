@@ -1,6 +1,7 @@
 ---
 title: Google
-dates: "01/2018 - 07/2018"
+startdate: "01/2018"
+enddate: "07/2018"
 description: "Built and tested new features and refactored legacy code for an internal tool at Fiber."
 ---
 

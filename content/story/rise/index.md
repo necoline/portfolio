@@ -1,6 +1,7 @@
 ---
 title: RISE
-dates: "07/2018 - 08/2019"
+startdate: "07/2018"
+enddate: "08/2019"
 description: "Researched, planned, designed, built and tested a web app for aid workers in a refugee camp."
 ---
 

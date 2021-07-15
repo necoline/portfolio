@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "necolines-portfolie",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A portfolio to illustrate my experience",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Necoline Hubner <hnhubner@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -43,7 +43,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/necoline/portfolio.git"
   },
   "scripts": {
     "build": "gatsby build",

@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogPostTemplate = ({ data, location }) => {
+const StoryTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h2 itemProp="headline">{post.frontmatter.title}</h2>
-          <p>{post.frontmatter.date}</p>
+          <p>{post.frontmatter.startdate}-{post.frontmatter.enddate}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -60,10 +60,10 @@ const BlogPostTemplate = ({ data, location }) => {
   )
 }
 
-export default BlogPostTemplate
+export default StoryTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
+  query StoryBySlug(
     $id: String!
     $previousPostId: String
     $nextPostId: String
@@ -79,7 +79,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        startdate
+        enddate
         description
       }
     }

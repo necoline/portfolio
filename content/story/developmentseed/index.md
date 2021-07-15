@@ -1,6 +1,7 @@
 ---
 title: Development Seed
-dates: "09/2019 - today"
+startdate: "09/2019"
+enddate: ""
 description: "Assesses user needs, technical challenges and client goals to create product road maps and technical implementation plans."
 ---
 
