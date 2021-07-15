@@ -43,7 +43,6 @@
   --fontWeight-semibold: 600;
   --fontWeight-bold: 700;
   --fontWeight-extrabold: 800;
-  --fontWeight-black: 900;
   --fontSize-root: 16px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
@@ -123,29 +122,32 @@ h6 {
 }
 
 h1 {
-  font-weight: var(--fontWeight-black);
+  font-weight: var(--fontWeight-normal);
   font-size: var(--fontSize-6);
   color: var(--color-heading-black);
 }
 
 h2 {
-  font-size: var(--fontSize-5);
+  font-weight: var(--fontWeight-normal);
+  font-size: var(--fontSize-6);
 }
 
 h3 {
-  font-size: var(--fontSize-4);
+  font-weight: var(--fontWeight-normal);
+  font-size: var(--fontSize-5);
 }
 
 h4 {
-  font-size: var(--fontSize-3);
+  font-family: var(--font-secondary);
+  font-size: var(--fontSize-4);
 }
 
 h5 {
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-3);
 }
 
 h6 {
-  font-size: var(--fontSize-1);
+  font-size: var(--fontSize-2);
 }
 
 h1 > a {
@@ -170,6 +172,12 @@ p {
   --x-height-multiplier: 0.35;
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
   padding: var(--spacing-0);
+}
+
+p > a {
+  color: black;
+  font-family: var(--font-tertiary);
+  font-size: var(--fontSize-0)
 }
 
 ul,
@@ -255,7 +263,7 @@ a:focus {
   margin-bottom: var(--spacing-20);
 }
 
-.main-heading {
+.global-heading {
   margin: 0;
   padding-top: var(--spacing-4);
   font-family: cursive;
@@ -304,7 +312,7 @@ a:focus {
 
 .time-series header p {
   font-size: var(--fontSize-2);
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
 }
 
 .time-series-nav ul {
@@ -313,6 +321,15 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+.secondary-font {
+  font-family: var(--font-secondary);
+  font-weight: 100;
+}
+
+.thick {
+  border-top: 1px solid #000;
 }
 
 /* Media queries */

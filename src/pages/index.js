@@ -25,7 +25,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <label className="label">Time series</label>
-      <h1>The Making of...</h1>
+      <h2>The Making of...</h2>
       <p>explore...</p>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
@@ -39,11 +39,11 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h2>
+                  <h3>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
-                  </h2>
+                  </h3>
                   <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
