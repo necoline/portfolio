@@ -6,7 +6,9 @@ import Seo from "../components/seo"
 
 const TimeSeries = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  const posts = data.allMarkdownRemark.nodes.filter(nodes => nodes.fields.slug.includes('story'))
+  const timeSeries = data.allMarkdownRemark.nodes.filter(nodes => !nodes.fields.slug.includes('story')).pop()
+
 
   if (posts.length === 0) {
     return (
@@ -25,8 +27,12 @@ const TimeSeries = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <label className="label">Time series</label>
-      <h2>The Making of...</h2>
-      <p>explore...</p>
+      <h2>{timeSeries.frontmatter.title}</h2>
+      <p>{timeSeries.frontmatter.description}</p>
+      <section
+          dangerouslySetInnerHTML={{ __html: timeSeries.html }}
+          itemProp="articleBody"
+        />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -74,10 +80,10 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(sort: { fields: [frontmatter___startdate], order: DESC }) {
       nodes {
-        excerpt
         fields {
           slug
         }
+        html
         frontmatter {
           startdate
           enddate
