@@ -3,11 +3,15 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { EventIcon, ArrowRight } from '../components/icons'
 
 const TimeSeries = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes.filter(nodes => nodes.fields.slug.includes('story'))
   const timeSeries = data.allMarkdownRemark.nodes.filter(nodes => !nodes.fields.slug.includes('story')).pop()
+  const formatDate = date => date ? `${new Date(date).getMonth() + 1} / ${new Date(date).getFullYear()}` : 'Today'
+  
+// console.log('events?', posts)
 
 
   if (posts.length === 0) {
@@ -33,14 +37,18 @@ const TimeSeries = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: timeSeries.html }}
           itemProp="articleBody"
         />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
+
+
+      <ol className="container" style={{ listStyle: `none` }}>
+
+        {posts.map((post, idx) => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug}>
+            <li key={post.fields.slug} className={`timeline-block timeline-block-${(idx%2 === 0) ? 'right' : 'left'}`}>
+              <EventIcon />
               <article
-                className="post-list-item"
+                className="timeline-content"
                 itemScope
                 itemType="http://schema.org/Article"
               >
@@ -50,7 +58,6 @@ const TimeSeries = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h3>
-                  <small>{post.frontmatter.startdate} - {post.frontmatter.enddate || "Today"}</small>
                 </header>
                 <section>
                   <p
@@ -59,7 +66,15 @@ const TimeSeries = ({ data, location }) => {
                     }}
                     itemProp="description"
                   />
+                  <div className="timeline-content-footer">
+                    <small>{formatDate(post.frontmatter.startdate)} - {formatDate(post.frontmatter.enddate)}</small>
+                    <Link to={post.fields.slug} itemProp="url" className="info-scent">
+                      {/* <span>Read more</span> */}
+                      <ArrowRight/>
+                    </Link>
+                  </div>
                 </section>
+                <hr></hr>
               </article>
             </li>
           )
@@ -78,7 +93,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___startdate], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___startdate], order: ASC }) {
       nodes {
         fields {
           slug

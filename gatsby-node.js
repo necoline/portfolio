@@ -105,8 +105,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Frontmatter {
       title: String
       description: String
-      startdate: String
-      enddate: String
+      startdate: Date @dateformat
+      enddate: Date @dateformat
     }
 
     type Fields {
