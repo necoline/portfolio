@@ -102,11 +102,18 @@ exports.createSchemaCustomization = ({ actions }) => {
       fields: Fields
     }
 
+    type Event implements Node {
+      startdate: Date @dateformat
+      enddate: Date @dateformat
+      description: String
+    }
+
     type Frontmatter {
       title: String
       description: String
       startdate: Date @dateformat
       enddate: Date @dateformat
+      events: [Event]
     }
 
     type Fields {

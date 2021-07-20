@@ -11,7 +11,6 @@ const TimeSeries = ({ data, location }) => {
   const timeSeries = data.allMarkdownRemark.nodes.filter(nodes => !nodes.fields.slug.includes('story')).pop()
   const formatDate = date => date ? `${new Date(date).getMonth() + 1} / ${new Date(date).getFullYear()}` : 'Today'
   
-// console.log('events?', posts)
 
 
   if (posts.length === 0) {
@@ -104,6 +103,11 @@ export const pageQuery = graphql`
           enddate
           title
           description
+          events {
+            startdate
+            enddate
+            description
+          }
         }
       }
     }
