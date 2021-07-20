@@ -102,7 +102,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       fields: Fields
     }
 
-    type Event implements Node {
+    type SubEvent implements Node {
       startdate: Date @dateformat
       enddate: Date @dateformat
       description: String
@@ -113,7 +113,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       startdate: Date @dateformat
       enddate: Date @dateformat
-      events: [Event]
+      subevents: [SubEvent]
     }
 
     type Fields {
