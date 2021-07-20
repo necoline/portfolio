@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { EventIcon, ArrowRight } from '../components/icons'
+import { EventIcon, SubEventIcon, ArrowRight } from '../components/icons'
 
 const TimeSeries = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -58,12 +58,35 @@ const TimeSeries = ({ data, location }) => {
                     </Link>
                   </h3>
                 </header>
+                {post.frontmatter.subevents ? (
+                  post.frontmatter.subevents.map((subevent, idx) => (
+                  <section>
+                    <div className="subevent">
+
+                   <SubEventIcon />
+                    <p itemProp="description" className="event">
+                      {subevent.description}
+                    </p>
+                    </div>
+                    <div className="timeline-content-footer">
+                      <small>{formatDate(subevent.startdate)} - {formatDate(subevent.enddate)}</small>
+                      {idx === post.frontmatter.subevents.length - 1 && (
+                        <Link to={post.fields.slug} itemProp="url" className="info-scent">
+                          {/* <span>Read more</span> */}
+                          <ArrowRight/>
+                        </Link>
+                      )}
+                  </div>
+                </section>
+                  ))
+                ) : (
                 <section>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}
                     itemProp="description"
+                    className="event"
                   />
                   <div className="timeline-content-footer">
                     <small>{formatDate(post.frontmatter.startdate)} - {formatDate(post.frontmatter.enddate)}</small>
@@ -73,6 +96,7 @@ const TimeSeries = ({ data, location }) => {
                     </Link>
                   </div>
                 </section>
+                )}
                 <hr></hr>
               </article>
             </li>
@@ -103,7 +127,7 @@ export const pageQuery = graphql`
           enddate
           title
           description
-          events {
+          subevents {
             startdate
             enddate
             description

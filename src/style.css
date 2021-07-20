@@ -408,6 +408,27 @@ a:focus {
   z-index: 1;
 }
 
+.event {
+  margin: var(--spacing-4) 0;
+}
+
+.subevent-section {
+  margin-bottom: var(--spacing-3);
+}
+
+.subevent {
+  position: relative;
+  margin-bottom: var(--spacing-3)
+}
+
+.subevent-marker {
+  position: absolute;
+  z-index: 1;
+  right: -1.6rem;
+  margin-top: var(--spacing-2);
+
+}
+
 .timeline-content {
   width: 110%;
   padding: 0 var(--spacing-3);
@@ -428,7 +449,6 @@ a:focus {
   display: flex;
   justify-content: space-between;
 }
-
 
 @media screen and (max-width: 768px) {
   .container:before {
