@@ -1,7 +1,8 @@
 ---
 title: RISE
-dates: "07/2018 - 08/2019"
-description: "Researched, planned, designed, built and tested a web app for aid workers in a refugee camp."
+startdate: "2018-07-02"
+enddate: "2019-08-02"
+description: "Researched, planned, designed, built and tested a web app for aid workers in a refugee camp"
 ---
 
 Prior to getting into tech, I worked in refugee service. I was studying international affairs with an emphasis on refugee issues when I initially got into tech. While working at Google I was approached by a non-profit that was looking to build a web tool for aid workers in refugee camps. 

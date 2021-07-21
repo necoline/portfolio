@@ -1,7 +1,13 @@
 ---
 title: Development Seed
-dates: "09/2019 - today"
-description: "Assesses user needs, technical challenges and client goals to create product road maps and technical implementation plans."
+startdate: "2019-09-02"
+enddate: ""
+description: "Assesses user needs, technical challenges and client goals to create product road maps and technical implementation plans"
+subevents: [
+  {startdate: "2019-09-02", enddate: "2020-04-02", description: "Planned and built tools for a variety of clients" },
+  {startdate: "2019-04-02", enddate: "", description: "Leads a team of designers and developers through multiple projects while building shared tools, processes and standards to elevate our practice" },
+  {startdate: "2020-02-02", enddate: "", description: "Assesses user needs, technical challenges and client goals to create product road maps and technical implementation plans" }
+  ]
 ---
 
 At the conclusion of the RISE contract, I joined Development Seed as a frontend engineer. Here I created geospatial data products for organizations like IFRC, NASA and Microsoft. About a year into the job, I entered into the role of team lead where I facilitated improvements to our development practices and mentored team members. 

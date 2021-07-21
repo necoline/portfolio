@@ -5,14 +5,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   // Define a template for time series
-  const timeSeries = path.resolve(`./src/templates/time-series.js`)
+  const story = path.resolve(`./src/templates/story.js`)
 
   // Get all markdown time series sorted by date
   const result = await graphql(
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
+          sort: { fields: [frontmatter___startdate], order: ASC }
           limit: 1000
         ) {
           nodes {
@@ -37,7 +37,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const posts = result.data.allMarkdownRemark.nodes
 
   // Create time series pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
+  // But only if there's at least one markdown file found at "content/story" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
 
   if (posts.length > 0) {
@@ -47,7 +47,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: post.fields.slug,
-        component: timeSeries,
+        component: story,
         context: {
           id: post.id,
           previousPostId,
@@ -102,10 +102,18 @@ exports.createSchemaCustomization = ({ actions }) => {
       fields: Fields
     }
 
+    type SubEvent implements Node {
+      startdate: Date @dateformat
+      enddate: Date @dateformat
+      description: String
+    }
+
     type Frontmatter {
       title: String
       description: String
-      dates: String
+      startdate: Date @dateformat
+      enddate: Date @dateformat
+      subevents: [SubEvent]
     }
 
     type Fields {
