@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { ArrowLeft } from "../components/icons"
+import { ArrowLeft, ArrowRight } from "../components/icons"
 
 const StoryTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -54,15 +54,17 @@ const StoryTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={previous.fields.slug} rel="prev" className="link">
+                <ArrowLeft /> 
+                <span>{previous.frontmatter.title}</span>
               </Link>
             )}
           </li>
           <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+            {next && next.fields.slug.includes("story") && (
+              <Link to={next.fields.slug} rel="next" className="link">
+                <span>{next.frontmatter.title}</span>
+                <ArrowRight /> 
               </Link>
             )}
           </li>
