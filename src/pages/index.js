@@ -69,7 +69,7 @@ const TimeSeries = ({ data, location }) => {
                     </p>
                     </div>
                     <div className="timeline-content-footer">
-                      <small>{formatDate(subevent.startdate)} - {formatDate(subevent.enddate)}</small>
+                      <small className="date">{formatDate(subevent.startdate)} - {formatDate(subevent.enddate)}</small>
                       {idx === post.frontmatter.subevents.length - 1 && (
                         <Link to={post.fields.slug} itemProp="url" className="info-scent">
                           {/* <span>Read more</span> */}
