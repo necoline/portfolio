@@ -89,8 +89,8 @@ const TimeSeries = ({ data, location }) => {
                     className="event"
                   />
                   <div className="timeline-content-footer">
-                    <small>{formatDate(post.frontmatter.startdate)} - {formatDate(post.frontmatter.enddate)}</small>
-                    <Link to={post.fields.slug} itemProp="url" className="info-scent">
+                    <small className="date">{formatDate(post.frontmatter.startdate)} - {formatDate(post.frontmatter.enddate)}</small>
+                    <Link to={post.fields.slug} itemProp="url" className="link">
                       {/* <span>Read more</span> */}
                       <ArrowRight/>
                     </Link>

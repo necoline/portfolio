@@ -3,11 +3,14 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { ArrowLeft } from "../components/icons"
 
 const StoryTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+
+  const formatDate = date => date ? `${new Date(date).getMonth() + 1} / ${new Date(date).getFullYear()}` : 'Today'
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -21,8 +24,17 @@ const StoryTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
+          <div className="label-row">
+            <small className="label">Time series - story</small>
+            <small className="date">{formatDate(post.frontmatter.startdate)} - {formatDate(post.frontmatter.enddate)}</small>
+          </div>
+          <div className="heading">
+            <Link to='/' itemProp="url" className="link">
+              <ArrowLeft/>
+              <span>Back to Time Story</span>
+            </Link>
+          </div>
           <h2 itemProp="headline">{post.frontmatter.title}</h2>
-          <p>{post.frontmatter.startdate}-{post.frontmatter.enddate}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
