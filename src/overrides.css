@@ -1,0 +1,9 @@
+.MuiButton-colorInherit  {
+  background-color: black !important;
+  color: white !important;
+}
+
+.MuiButton-containedPrimary {
+  background-color: var(--color-primary) !important;
+
+}

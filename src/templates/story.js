@@ -3,11 +3,17 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { ArrowLeft, ArrowRight } from "../components/icons"
 
 const StoryTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+
+  const formatDate = date =>
+    date
+      ? `${new Date(date).getMonth() + 1} / ${new Date(date).getFullYear()}`
+      : "Today"
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -21,14 +27,25 @@ const StoryTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
+          <div className="label-row">
+            <small className="label">
+              <Link to="/" itemProp="url" className="label-link">
+                Time series
+              </Link>
+              - story
+            </small>
+            <small className="date">
+              {formatDate(post.frontmatter.startdate)} -{" "}
+              {formatDate(post.frontmatter.enddate)}
+            </small>
+          </div>
+          <div className="heading"></div>
           <h2 itemProp="headline">{post.frontmatter.title}</h2>
-          <p>{post.frontmatter.startdate}-{post.frontmatter.enddate}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        
       </article>
       <nav className="time-series-nav">
         <ul
@@ -42,15 +59,17 @@ const StoryTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={previous.fields.slug} rel="prev" className="link">
+                <ArrowLeft />
+                <span>{previous.frontmatter.title}</span>
               </Link>
             )}
           </li>
           <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+            {next && next.fields.slug.includes("story") && (
+              <Link to={next.fields.slug} rel="next" className="link">
+                <span>{next.frontmatter.title}</span>
+                <ArrowRight />
               </Link>
             )}
           </li>
