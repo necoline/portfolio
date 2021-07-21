@@ -273,9 +273,15 @@ h3 > a:hover {
   margin-bottom: var(--spacing-20);
 }
 
+.global-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-4) var(--spacing-4) var(--spacing-2) var(--spacing-4);
+}
+
 .global-heading {
   margin: 0;
-  padding-top: var(--spacing-4);
+  padding-top: var(--spacing-2);
   font-family: cursive;
   font-style: italic;
   font-weight: 100;
