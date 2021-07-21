@@ -16,25 +16,20 @@ I couldn’t resist the opportunity to combine my technical skills with my inter
 During the year long contract, I visited the refugee camps twice. Once to conduct user research and later to test the pilot in context.    
 
 
-| Technologies Used | 
-| :----------       | 
-| Sketch            | 
-| React             | 
-| Jest              | 
-| Webpack           | 
-| Service Workers   | 
-| Azure Suite       | 
-| Azure Dev Ops     | 
-| Node.js           | 
-| Hapi              | 
+| Technologies Used |      | Skills Developed          |
+| :----------       |:----:| :------------------------ |
+| Sketch            |      | User research             |
+| React             |      | Product planning          |
+| Jest              |      | Prototyping               |
+| Webpack           |      | Usability testing         |
+| Service Workers   |      | Performance optimization  |
+| Azure Suite       |      |                                             
+| Azure Dev Ops     |      |                                             
+| Node.js           |      |                                             
+| Hapi              |      |                                             
 
 
 
-| Skills Developed |
-| :----- |
-| User research |
-| Product planning |
-| Prototyping |
-| Usability testing |
-| Performance optimization |
+
+
 

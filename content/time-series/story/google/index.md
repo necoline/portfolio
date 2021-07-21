@@ -10,19 +10,14 @@ My first experience working as a developer at a tech company was at Google. I wo
 [Listen: Modern Web Podcast - CSS Grid](https://www.youtube.com/watch?v=K7CJ_WpGCiU)
 
 
-| Technologies Used | 
-| :----------       | 
-| Angular 1.x       | 
-| Jasmine           | 
-| Material Design   | 
+| Technologies Used |      | Skills Developed                            |
+| :----------       |:----:| :------------------------------------------ |
+| Angular 1.x       |      | Unit testing                                |
+| Jasmine           |      | Code documentation                          |
+| Material Design   |      | In-depth code reviews                       |
+|                   |      | Translating needs of highly technical users |
+|                   |      | Creating designs for data heavy interfaces  |
 
 
 
-| Skills Developed |
-| :----- |
-| Unit testing |
-| Code documentation |
-| In-depth code reviews |
-| Translating needs of highly technical users |
-| Creating designs for data heavy interfaces |
 
