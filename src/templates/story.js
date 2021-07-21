@@ -25,14 +25,15 @@ const StoryTemplate = ({ data, location }) => {
       >
         <header>
           <div className="label-row">
-            <small className="label">Time series - story</small>
+            <small className="label">
+            <Link to='/' itemProp="url" className="label-link">
+              Time series
+            </Link>
+               - story
+              </small>
             <small className="date">{formatDate(post.frontmatter.startdate)} - {formatDate(post.frontmatter.enddate)}</small>
           </div>
           <div className="heading">
-            <Link to='/' itemProp="url" className="link">
-              <ArrowLeft/>
-              <span>Back to Time Story</span>
-            </Link>
           </div>
           <h2 itemProp="headline">{post.frontmatter.title}</h2>
         </header>
