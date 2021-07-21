@@ -279,6 +279,11 @@ h3 > a:hover {
   padding: var(--spacing-4) var(--spacing-4) var(--spacing-2) var(--spacing-4);
 }
 
+.global-header-link {
+  display: flex;
+  align-items: center;
+}
+
 .global-heading {
   margin: 0;
   padding-top: var(--spacing-2);

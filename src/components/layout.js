@@ -18,9 +18,8 @@ const Layout = ({ location, title, children }) => {
           <h1 className="global-heading">
           <Link to="/">{title}</Link>
           </h1>
-          <Link href="mailto: hnhubner@gmail.com">
-            <Button
-              className="global-header-button"
+          <Link className="global-header-link" href="mailto: hnhubner@gmail.com">
+            <Button   
               variant="contained"
               color="primary"
             >
