@@ -3,7 +3,7 @@ import "typeface-montserrat"
 import "typeface-merriweather"
 // normalize CSS across browsers
 import "./src/normalize.css"
-// vendor overrides 
+// vendor overrides
 import "./src/overrides.css"
 // custom CSS styles
 import "./src/style.css"

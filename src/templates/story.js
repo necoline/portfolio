@@ -10,7 +10,10 @@ const StoryTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
-  const formatDate = date => date ? `${new Date(date).getMonth() + 1} / ${new Date(date).getFullYear()}` : 'Today'
+  const formatDate = date =>
+    date
+      ? `${new Date(date).getMonth() + 1} / ${new Date(date).getFullYear()}`
+      : "Today"
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -26,22 +29,23 @@ const StoryTemplate = ({ data, location }) => {
         <header>
           <div className="label-row">
             <small className="label">
-            <Link to='/' itemProp="url" className="label-link">
-              Time series
-            </Link>
-               - story
-              </small>
-            <small className="date">{formatDate(post.frontmatter.startdate)} - {formatDate(post.frontmatter.enddate)}</small>
+              <Link to="/" itemProp="url" className="label-link">
+                Time series
+              </Link>
+              - story
+            </small>
+            <small className="date">
+              {formatDate(post.frontmatter.startdate)} -{" "}
+              {formatDate(post.frontmatter.enddate)}
+            </small>
           </div>
-          <div className="heading">
-          </div>
+          <div className="heading"></div>
           <h2 itemProp="headline">{post.frontmatter.title}</h2>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        
       </article>
       <nav className="time-series-nav">
         <ul
@@ -56,7 +60,7 @@ const StoryTemplate = ({ data, location }) => {
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev" className="link">
-                <ArrowLeft /> 
+                <ArrowLeft />
                 <span>{previous.frontmatter.title}</span>
               </Link>
             )}
@@ -65,7 +69,7 @@ const StoryTemplate = ({ data, location }) => {
             {next && next.fields.slug.includes("story") && (
               <Link to={next.fields.slug} rel="next" className="link">
                 <span>{next.frontmatter.title}</span>
-                <ArrowRight /> 
+                <ArrowRight />
               </Link>
             )}
           </li>
