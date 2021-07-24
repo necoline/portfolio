@@ -322,44 +322,11 @@ h3 > a:hover {
   justify-content: space-between;
 }
 
-.post-list-item {
-  margin-bottom: var(--spacing-8);
-  margin-top: var(--spacing-8);
-}
-
-.post-list-item p {
-  margin-bottom: var(--spacing-0);
-}
-
-.post-list-item h2 {
-  font-size: var(--fontSize-4);
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-2);
-  margin-top: var(--spacing-0);
-}
-
-.post-list-item header {
-  margin-bottom: var(--spacing-4);
-}
-
 .header-link-home {
   font-weight: var(--fontWeight-normal);
   font-family: var(--font-heading);
   text-decoration: none;
   font-size: var(--fontSize-2);
-}
-
-.time-series header h1 {
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
-}
-
-.time-series header p {
-  font-size: var(--fontSize-2);
-  font-family: var(--font-body);
-}
-
-.time-series-nav ul {
-  margin: var(--spacing-0);
 }
 
 .gatsby-highlight {
@@ -401,107 +368,4 @@ h3 > a:hover {
   }
 }
 
-/* Timeline */
-.container {
-  position: relative;
-  overflow: hidden;
-}
 
-.container:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -1px;
-  width: 1px;
-  height: 100%;
-  background: var(--color-text);
-  z-index: 1
-}
-
-.timeline-block {
-  width: -webkit-calc(50% + 8px);
-  width: -moz-calc(50% + 8px);
-  width: calc(50% + 8px);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-box-pack: justify;
-  justify-content: space-between;
-  clear: both;
-}
-
-.timeline-block-right {
-  float: right;
-}
-
-.timeline-block-left {
-  float: left;
-  direction: rtl;
-  text-align: right;
-}
-
-.marker {
-  background: #FFFF;
-  margin-top: var(--spacing-2);
-  z-index: 1;
-}
-
-.event {
-  margin: var(--spacing-4) 0;
-}
-
-.subevent-section {
-  margin-bottom: var(--spacing-3);
-}
-
-.subevent {
-  position: relative;
-  margin-bottom: var(--spacing-3)
-}
-
-.subevent-marker {
-  position: absolute;
-  z-index: 1;
-  right: -1.6rem;
-  margin-top: var(--spacing-2);
-
-}
-
-.timeline-content {
-  width: 110%;
-  padding: 0 var(--spacing-3);
-  color: var(--color-text)
-}
-
-.timeline-content h3 {
-  margin: 0;
-}
-
-.timeline-content-footer {
-  direction: ltr;
-  display: flex;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 768px) {
-  .container:before {
-     left: 8px;
-     width: 2px;
-  }
-  .timeline-block {
-     width: 100%;
-     margin-bottom: 30px;
-  }
-  .timeline-block-right {
-     float: none;
-  }
-
-  .timeline-block-left {
-     float: none;
-     direction: ltr;
-  }
-}
