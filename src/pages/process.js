@@ -30,9 +30,9 @@ const Process = ({ data, location }) => {
     <ActionLayout
       location={location}
       title={siteTitle}
-      actionText="Learn about my creative process."
+      actionText="Learn about Necoline's creative process."
     >
-      <Seo title="My Process" description="links to authors creative process" />
+      <Seo title="Necos Process" description="links to authors creative process" />
       <section
         css={`
            {
