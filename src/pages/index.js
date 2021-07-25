@@ -33,7 +33,7 @@ const TimeSeries = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
+      <Seo title="Product Management Time series" />
       <small className="label">Time series</small>
       <h2>{timeSeries.frontmatter.title}</h2>
       <p>{timeSeries.frontmatter.description}</p>

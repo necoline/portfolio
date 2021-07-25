@@ -5,7 +5,7 @@ module.exports = {
       name: `Necoline Hubner`,
       summary: `A portfolio summarizing my work experience.`,
     },
-    description: `A gatsby porftolio.`,
+    description: `Necoline's product portfolio.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: `necolinehubner`,
