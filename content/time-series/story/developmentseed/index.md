@@ -2,7 +2,7 @@
 title: Development Seed
 startdate: "2019-09-02"
 enddate: ""
-description: "Assesses user needs, technical challenges and client goals to create product road maps and technical implementation plans"
+description: "Assesses user needs, technical challenges and client goals to create product roadmaps and technical implementation plans"
 subevents:
   [
     {
@@ -23,7 +23,7 @@ subevents:
   ]
 ---
 
-At the conclusion of the RISE contract, I joined Development Seed as a frontend engineer. Here I created geospatial data products for organizations like IFRC, NASA and Microsoft. About a year into the job, I entered into the role of team lead where I facilitated improvements to our development practices and mentored team members.
+At the conclusion of the RISE contract, Necoline joined Development Seed as a frontend engineer. Here she creates geospatial data products for organizations like IFRC, NASA and Microsoft. About a year into the job, Necoline entered into the role of team lead where she facilitated improvements to their development practices and mentors team members.
 
 ### [IFRC - GO](https://go.ifrc.org/)
 
