@@ -5,5 +5,8 @@
 
 .MuiButton-containedPrimary {
   background-color: var(--color-primary) !important;
+}
 
+.MuiButton-label {
+  text-transform: capitalize !important;
 }

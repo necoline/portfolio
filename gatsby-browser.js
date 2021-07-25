@@ -1,12 +1,13 @@
-// custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
 // normalize CSS across browsers
 import "./src/normalize.css"
 // vendor overrides
 import "./src/overrides.css"
-// custom CSS styles
+// global CSS styles
 import "./src/style.css"
 
-// Highlighting for code blocks
-import "prismjs/themes/prism.css"
+// template styles
+import "./src/templates/story.css"
+
+// page styles
+import "./src/pages/time-series.css"
+import "./src/pages/process.css"
