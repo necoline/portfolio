@@ -8,7 +8,9 @@ const PageHeader = ({ title }) => {
   return (
     <header className="global-header">
       <div className="global-header-wrapper">
-        <img id="logo" src={logo} alt="Logo" />
+        <Link to="/">
+          <img id="logo" src={logo} alt="Logo" />
+        </Link>
         <h1 className="global-heading">
           <Link to="/">{title}</Link>
         </h1>

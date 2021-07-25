@@ -6,6 +6,7 @@ export default function LinkButton({ text, link, isFullWidth }) {
   return (
     <Link
       to={link}
+      target="_blank"
       className="secondary-font"
       css={`
          {

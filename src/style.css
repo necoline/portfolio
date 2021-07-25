@@ -273,6 +273,10 @@ footer {
   padding: var(--spacing-10) var(--spacing-5);
 }
 
+#logo {
+  margin-top: 4px;
+}
+
 /* Custom classes */
 
 .global-header-wrapper {
@@ -356,7 +360,7 @@ footer {
   font-size: var(--fontSize-0); 
   font-family: var(--font-secondary);
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .link span {
