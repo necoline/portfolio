@@ -280,24 +280,15 @@ footer {
 /* Custom classes */
 
 .global-header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: var(--spacing-3) var(--spacing-12) var(--spacing-2) var(--spacing-12);
+  padding: var(--spacing-2) var(--spacing-6);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   border-bottom: 1px solid var(--color-text-light);
 }
 
 .global-header-link {
   display: flex;
   align-items: center;
-}
-
-.global-heading {
-  margin: 0;
-  padding-top: var(--spacing-2);
-  font-family: cursive;
-  font-style: italic;
-  font-weight: 100;
-  text-align: center;
 }
 
 .action-block {

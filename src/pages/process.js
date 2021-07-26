@@ -32,7 +32,10 @@ const Process = ({ data, location }) => {
       title={siteTitle}
       actionText="Learn about Necoline's creative process."
     >
-      <Seo title="Necos Process" description="links to authors creative process" />
+      <Seo
+        title="Necos Process"
+        description="links to authors creative process"
+      />
       <section
         css={`
            {

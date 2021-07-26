@@ -1,24 +1,37 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 import Button from "@material-ui/core/Button"
 
-import logo from "../images/n-icon.png"
+import { TitleIcon } from "./icons"
 
-const PageHeader = ({ title }) => {
+const TitleWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const HeaderLink = styled(Link)`
+  display: flex;
+  justify-content: flex-end;
+`
+
+const PageHeader = () => {
   return (
     <header className="global-header">
       <div className="global-header-wrapper">
-        <Link to="/">
-          <img id="logo" src={logo} alt="Logo" />
-        </Link>
-        <h1 className="global-heading">
-          <Link to="/">{title}</Link>
-        </h1>
-        <Link className="global-header-link" href="mailto: hnhubner@gmail.com">
+        <div />
+        <TitleWrapper>
+          <TitleIcon />
+        </TitleWrapper>
+        <HeaderLink
+          className="global-header-link"
+          href="mailto: hnhubner@gmail.com"
+        >
           <Button variant="contained" color="primary">
             Connect
           </Button>
-        </Link>
+        </HeaderLink>
       </div>
     </header>
   )
