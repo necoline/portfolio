@@ -23,7 +23,7 @@ subevents:
   ]
 ---
 
-At the conclusion of the RISE contract, Necoline joined Development Seed as a frontend engineer. Here she creates geospatial data products for organizations like IFRC, NASA and Microsoft. About a year into the job, Necoline entered into the role of team lead where she facilitated improvements to their development practices and mentors team members.
+At the conclusion of the RISE contract, Necoline joined Development Seed as a frontend engineer. Here, she creates geospatial data products for organizations like IFRC, NASA and Microsoft. About a year into the job, Necoline entered into the role of team lead where she mentors team members and facilitates improvements to the development practices of the team's work across projects.
 
 ### [IFRC - GO](https://go.ifrc.org/)
 
