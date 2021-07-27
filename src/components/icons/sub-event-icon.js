@@ -16,8 +16,8 @@ const SubEventIcon = () => (
       y="0.5"
       width="9"
       height="9"
-      fill="#E7131A"
-      stroke="#E7131A"
+      fill="#326891"
+      stroke="#326891"
     />
   </svg>
 )

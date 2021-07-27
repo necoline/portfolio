@@ -16,7 +16,7 @@ const EventIcon = () => (
       y="0.85"
       width="18.3"
       height="18.3"
-      stroke="#E7131A"
+      stroke="#326891"
       strokeWidth="1.7"
     />
     <rect
@@ -24,8 +24,8 @@ const EventIcon = () => (
       y="5.5"
       width="9"
       height="9"
-      fill="#E7131A"
-      stroke="#E7131A"
+      fill="#326891"
+      stroke="#326891"
     />
   </svg>
 )

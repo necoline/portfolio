@@ -12,7 +12,7 @@ const ArrowLeft = () => (
     <title>Arrow Left</title>
     <path
       d="M12.5 20L2 10.5M2 10.5L12.5 1M2 10.5H38"
-      stroke="#E7131A"
+      stroke="#326891"
       strokeWidth="2"
     />
   </svg>

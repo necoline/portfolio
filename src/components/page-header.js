@@ -22,7 +22,9 @@ const PageHeader = () => {
       <div className="global-header-wrapper">
         <div />
         <TitleWrapper>
-          <TitleIcon />
+          <Link to="/" >
+            <TitleIcon />
+          </Link>
         </TitleWrapper>
         <HeaderLink
           className="global-header-link"
