@@ -8,7 +8,7 @@ subevents:
     {
       startdate: "2019-09-02",
       enddate: "2020-04-02",
-      description: "Planned and built tools for a variety of clients",
+      description: "Contributed as a fullstack developer to prjects for clients throughout all lifecycles",
     },
     {
       startdate: "2019-04-02",
@@ -23,7 +23,7 @@ subevents:
   ]
 ---
 
-At the conclusion of the RISE contract, Necoline joined Development Seed as a frontend engineer. Here she creates geospatial data products for organizations like IFRC, NASA and Microsoft. About a year into the job, Necoline entered into the role of team lead where she facilitated improvements to their development practices and mentors team members.
+At the conclusion of the RISE contract, Necoline joined Development Seed as a frontend engineer. Here she creates geospatial data products for organizations like IFRC, NASA and Microsoft. About a year into the job, Necoline entered into the role of team lead where she facilitated improvements to their development practices and mentors team members. In the last 8 months, she has acted as a product owner on her projects working with clients to define the product vision, meeting with users to identify their needs, creating roadmaps to build the tools and interfaces and evaluating user behavior to measure success. 
 
 ### [IFRC - GO](https://go.ifrc.org/)
 
@@ -63,11 +63,11 @@ At the conclusion of the RISE contract, Necoline joined Development Seed as a fr
 
 ### [PEARL](https://developmentseed.org/projects/pearl-land-mapping)
 
-| Technologies Used |     | Skills Developed                                                        |
-| :---------------- | :-: | :---------------------------------------------------------------------- |
-| Figma             |     | Human-in-the-loop UX                                                    |
-| Miro              |     | Combining and communicating user needs against ML training requirements |
-|                   |     | Coordinating multi-disciplinary design brainstorming                    |
+| Technologies Used |     | Skills Developed                                       |
+| :---------------- | :-: | :----------------------------------------------------- |
+| Figma             |     | Human-in-the-loop UX                                   |
+| Miro              |     | Evaluating user needs against ML training requirements |
+|                   |     | Coordinating multi-disciplinary design brainstorming   |
 
 ### [Satellogic](https://satellogic.com/)
 
