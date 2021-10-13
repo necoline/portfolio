@@ -63,11 +63,11 @@ At the conclusion of the RISE contract, Necoline joined Development Seed as a fr
 
 ### [PEARL](https://developmentseed.org/projects/pearl-land-mapping)
 
-| Technologies Used |     | Skills Developed                                                        |
-| :---------------- | :-: | :---------------------------------------------------------------------- |
-| Figma             |     | Human-in-the-loop UX                                                    |
-| Miro              |     | Combining and communicating user needs against ML training requirements |
-|                   |     | Coordinating multi-disciplinary design brainstorming                    |
+| Technologies Used |     | Skills Developed                                       |
+| :---------------- | :-: | :----------------------------------------------------- |
+| Figma             |     | Human-in-the-loop UX                                   |
+| Miro              |     | Evaluating user needs against ML training requirements |
+|                   |     | Coordinating multi-disciplinary design brainstorming   |
 
 ### [Satellogic](https://satellogic.com/)
 
