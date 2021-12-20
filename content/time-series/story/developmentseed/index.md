@@ -1,7 +1,7 @@
 ---
 title: Development Seed
 startdate: "2019-09-02"
-enddate: ""
+enddate: "2021-12-09"
 description: "Assesses user needs, technical challenges and client goals to create product roadmaps and technical implementation plans"
 subevents:
   [
@@ -12,18 +12,18 @@ subevents:
     },
     {
       startdate: "2019-04-02",
-      enddate: "",
+      enddate: "2021-12-09",
       description: "Leads a team of designers and developers through multiple projects while building shared tools, processes and standards to elevate our practice",
     },
     {
       startdate: "2020-02-02",
-      enddate: "",
+      enddate: "2021-12-09",
       description: "Assesses user needs, technical challenges and client goals to create product road maps and technical implementation plans",
     },
   ]
 ---
 
-At the conclusion of the RISE contract, Necoline joined Development Seed as a frontend engineer. Here she creates geospatial data products for organizations like IFRC, NASA and Microsoft. About a year into the job, Necoline entered into the role of team lead where she facilitated improvements to their development practices and mentors team members. In the last 8 months, she has acted as a product owner on her projects working with clients to define the product vision, meeting with users to identify their needs, creating roadmaps to build the tools and interfaces and evaluating user behavior to measure success. 
+At the conclusion of the RISE contract, Necoline joined Development Seed as a frontend engineer. Here she creates geospatial data products for organizations like IFRC, NASA and Microsoft. About a year into the job, Necoline entered into the role of team lead where she facilitated improvements to their development practices and mentors team members. In the last 8 months, she has acted as a product owner on her projects working with clients to define the product vision, meeting with users to identify their needs, creating roadmaps to build the tools and interfaces and evaluating user behavior to measure success.
 
 ### [IFRC - GO](https://go.ifrc.org/)
 
