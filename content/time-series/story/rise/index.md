@@ -5,7 +5,10 @@ enddate: "2019-08-02"
 description: "Researched, planned, designed, built and tested a web app for aid workers in a refugee camp"
 ---
 
-Prior to getting into tech, Necoline worked in refugee services. She was studying international affairs with an emphasis on refugee issues when she initially got into tech. While working at Google, she was approached by a non-profit that was looking to build a web tool for aid workers in refugee camps.
+Prior to getting into tech, Necoline worked in refugee services. She was studying international affairs with an emphasis on refugee issues when she initially got into tech. While working at Google, she was approached by a non-profit that was looking to build a web tool for aid workers in refugee camps. 
+
+inserting changes
+
 
 [Read: The RISE Product](https://www.rise-int.org/product)
 
