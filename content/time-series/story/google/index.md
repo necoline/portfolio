@@ -5,7 +5,7 @@ enddate: "2018-07-02"
 description: "Built and tested new features and refactored legacy code for an internal tool at Fiber"
 ---
 
-Necoline's first experience working as a developer at a tech company was at Google. She worked as a contractor to build out features for an internal tool that supported Google Fiber technicians. It was here that she developed a deep appreciation for writing resilient and readable code and learned valuable lessons on how to effectively collaborate on designing technical architecture.
+My first experience working as a developer at a tech company was at Google. I worked as a contractor to build out features for an internal tool that supported Google Fiber technicians. It was here that I developed a deep appreciation for writing resilient and readable code and learned valuable lessons on how to effectively collaborate on designing technical architecture.
 
 [Listen: Modern Web Podcast - CSS Grid](https://www.youtube.com/watch?v=K7CJ_WpGCiU)
 
