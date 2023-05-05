@@ -27,13 +27,14 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: "Graphik-Medium", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --fontFamily-sans: "Graphik-Medium", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
   --fontFamily-serif: "AGaramondPro", "Georgia", Cambria, "Times New Roman",
     Times, serif;
-  --fontFamily-serif2: "RobotoMono", "Courier", "Droid Sans Mono", "IBM Plex Mono",
-    Times, serif;
+  --fontFamily-serif2: "RobotoMono", "Courier", "Droid Sans Mono",
+    "IBM Plex Mono", Times, serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-serif);
   --font-secondary: var(--fontFamily-sans);
@@ -57,8 +58,8 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #E7131A;
-  --color-secondary: #E0F2FA;
+  --color-primary: #e7131a;
+  --color-secondary: #e0f2fa;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -93,7 +94,7 @@ footer {
 
 hr {
   background: var(--color-accent);
-  height: .5px;
+  height: 0.5px;
   border-top: 1px solid #000;
 }
 
@@ -177,7 +178,7 @@ p {
 p > a {
   color: black;
   font-family: var(--font-tertiary);
-  font-size: var(--fontSize-0)
+  font-size: var(--fontSize-0);
 }
 
 ul,
@@ -239,7 +240,7 @@ table {
 table th {
   border-bottom: 1px solid var(--color-accent);
   font-size: var(--fontSize-3);
-  font-weight: var(--fontWeight-normal);;
+  font-weight: var(--fontWeight-normal);
 }
 
 table tr > * + * {
@@ -357,7 +358,7 @@ footer {
 
 .link {
   color: #000;
-  font-size: var(--fontSize-0); 
+  font-size: var(--fontSize-0);
   font-family: var(--font-secondary);
   text-decoration: none;
   /* text-transform: uppercase; */
@@ -380,5 +381,3 @@ footer {
     list-style-position: inside;
   }
 }
-
-

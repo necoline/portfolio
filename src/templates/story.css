@@ -7,6 +7,10 @@
   margin-bottom: var(--spacing-0);
 }
 
+.post-list-item ul {
+  margin-left: var(--spacing-12);
+}
+
 .post-list-item h2 {
   font-size: var(--fontSize-4);
   color: var(--color-primary);
