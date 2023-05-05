@@ -16,8 +16,8 @@ While working at CodeSandbox, I have been immersed in all aspects of product dis
 
 2.  Driving interest in Pro subscriptions through trials and marketing campaigns resulting in 15% growth in team subscriptions 20% increase in team seat count seats increased by 20%.
 
-3. Developed user feedback channels and systems of collecting and synthesizing findings from interviews and surveys. This resulted in a steady stream of 3 interviews a week and direct feedback on active product discovery.
+3. Developing user feedback channels and systems of collecting and synthesizing findings from interviews and surveys. This resulted in a steady stream of 3 interviews a week and direct feedback on active product discovery.
 
-4. Merged the dashboard experiences for the original and beta product offerings (cloud sandboxes and repositories) zero loss in user engagement on protyping sandboxes while driving up engagement of cloud sandboxes and repositories by 120% and adoption by 106%.
+4. Merging the dashboard experiences for the original and beta product offerings (cloud sandboxes and repositories) zero loss in user engagement on protyping sandboxes while driving up engagement of cloud sandboxes and repositories by 120% and adoption by 106%.
 
     
